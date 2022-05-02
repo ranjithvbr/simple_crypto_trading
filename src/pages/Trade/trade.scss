@@ -1,0 +1,144 @@
+@import "../../colors.scss";
+
+.tradeContainer {
+    height: 100vh;
+    margin: 0 auto;
+    width: 35rem;
+    padding: 20px 10px;
+
+    >div {
+        height: 15rem;
+        background-color: $white;
+        border-radius: 10px;
+        padding: 30px 0;
+        position: relative;
+    }
+
+    h3 {
+        margin: 0 0 30px 35px;
+    }
+
+    .swapArrow {
+        z-index: 5;
+        position: absolute;
+        left: 49%;
+        top: 47%;
+        width: 25px;
+        height: 25px;
+        background-color: $white;
+        border: 1px solid $tinyGrey;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+    .amountInput {
+        padding: 20px 120px 20px 20px;
+        border-radius: 10px;
+        border: 1px solid #b3b4b8;
+        background-color: #edeef2;
+        width: calc(85% - 140px);
+        font-size: 24px;
+        margin: 0 0 8px 35px;
+    }
+
+    .inputContainer {
+        position: relative;
+
+        .coins {
+            background-color: $white;
+            box-shadow: #00000013 0px 6px 10px;
+            height: 2.4rem;
+            padding: 0px 8px;
+            position: absolute;
+            right: 10%;
+            top: 15px;
+            display: flex;
+            align-items: center;
+            border-radius: 7px;
+            cursor: pointer;
+
+            >span:first-child {
+                margin-right: 10px;
+                background-color: $lightGold;
+                width: 30px;
+                height: 30px;
+                border-radius: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: $white;
+                font-weight: bold;
+            }
+
+            >span:last-child {
+                margin-left: 10px;
+                transform: rotate(180deg);
+                display: block;
+                position: relative;
+                bottom: 2px;
+                font-size: 18px;
+                font-weight: bolder;
+            }
+        }
+    }
+}
+
+.selectTokenModal {
+    .searchBox {
+        input {
+            margin-bottom: 20px;
+            background-color: $white;
+        }
+    }
+
+    .break {
+        border-bottom: 1px solid $lightGrey;
+    }
+
+    .cryptoListContainer {
+        height: 30rem;
+        overflow: scroll;
+    }
+
+    .cryptoList {
+        display: flex;
+        padding: 15px 10px;
+        border-radius: 10px;
+        cursor: pointer;
+
+        &:hover {
+            background-color: $lightGrey;
+        }
+
+        >div:first-child {
+            font-size: 1.17em;
+            font-weight: bold;
+            width: 35px;
+            height: 35px;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: $white;
+            font-weight: bold;
+            background-color: $lightGold;
+            margin-right: 20px;
+        }
+
+        .cryptoNameList {
+            >div:nth-child(2) {
+                color: #999999;
+            }
+        }
+    }
+}
+
+.oneRate {
+    margin-left: 35px;
+    font-size: 14px;
+    color: grey;
+    margin-top: 5px;
+}

@@ -1,0 +1,20 @@
+@import "../../colors.scss";
+
+.loginContainer {
+    display: grid;
+    padding: 0 40px 20px;
+
+    h3 {
+        margin: 10px 0 30px;
+    }
+
+    label {
+        margin-bottom: 7px;
+    }
+}
+
+.btnStyle {
+    padding: 15px 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+}

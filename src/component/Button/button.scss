@@ -1,0 +1,14 @@
+@import "../../colors.scss";
+
+.buttonStyle:active {
+    background-color: $lightBlue;
+}
+
+.buttonStyle {
+    border: none;
+    color: $white;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: $darkBlue;
+}

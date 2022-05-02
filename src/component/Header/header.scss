@@ -1,0 +1,52 @@
+@import "../../colors.scss";
+
+.stickyContainer {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.header {
+
+    ul {
+        list-style-type: none;
+        margin-top: 0;
+        padding: 6px 10px;
+        overflow: hidden;
+        background-color: $white;
+        border-radius: 10px;
+
+        li {
+            &:last-child {
+                float: right;
+            }
+
+            float: left;
+
+            .active {
+                background-color: $lightGold;
+                color: $white;
+                font-weight: bold;
+            }
+
+            a {
+                display: block;
+                color: $black;
+                text-align: center;
+                padding: 10px 16px;
+                text-decoration: none;
+                border-radius: 5px;
+            }
+        }
+    }
+}
+
+.optionStyle {
+    .dropbtn {
+        border: 1px solid $lightGrey;
+    }
+
+    .dropdown-content {
+        right: 18px;
+    }
+}

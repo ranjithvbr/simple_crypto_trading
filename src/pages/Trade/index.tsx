@@ -190,7 +190,7 @@ export default function Trade() {
   const tokenRate = converter?.data?.result;
   const USDRate = converter?.USDdata?.result;
 
-  console.log(value.fiatValue, tokenRate)
+  console.log(value.fiatValue, tokenRate, token)
 
   return (
     <>
@@ -209,13 +209,13 @@ export default function Trade() {
                 {!swap ? amoutInput() : fiatInput()}
                 {swap && value.amountValue
                   ? USDRate && (
-                      <div className="oneRate">{`1 USD = ${USDRate}`}</div>
+                      <div className="oneRate">{`1 USD = ${USDRate} ${token.amountToken || crytoList?.[0]?.symbol}`}</div>
                     )
                   : tokenRate &&
                     value.amountValue && (
                       <div className="oneRate">{`1 ${
                         token.amountToken || crytoList?.[0]?.symbol
-                      } = ${tokenRate}`}</div>
+                      } = ${tokenRate} USD`}</div>
                     )}
               </div>
             </div>
